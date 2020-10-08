@@ -83,7 +83,17 @@ function appendTaskDOM(tarea) {
     } 
   });
   
+  let trash = document.getElementsByName('buttonDelete');
 
+  for (let i = 0; item.children.length -1; i++) {
+    trash[i].addEventListener('click', function(){
+      let basurero = getElementsByName(id);
+        if (!basurero) {
+          father = basurero.parentNode;
+          father.removeChild(basurero);
+        }
+    });
+  }
   // Se agregan elementos.
   item.appendChild(checkbox);
   item.appendChild(label);
